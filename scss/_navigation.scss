@@ -1,0 +1,156 @@
+//  ALL CODE AND DESIGN BY GRACE BIRNAM <a href="https://grxcelyn.com/">Grxcelyn.com</a> 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+// h1, h2, h3, h4 ,h5 ,h6{
+//     font-family: $mainfont;
+// }
+
+// a, p {
+//     font-family: $secondfont;
+// }
+
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    overflow-x: hidden;
+    height: 60px;
+}
+
+.logo {
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 1.5rem;
+    font-weight: 300;
+    width: 100px;
+    float: left;
+    margin: 10px auto 10px 60px;
+    text-decoration: none;
+    a{
+        text-decoration: none;
+        color: $main;
+    }
+
+    a:hover{
+    
+    }
+}
+
+
+
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    overflow-x: hidden;
+    float: right;
+    margin: 20px 35px 15px auto;
+    overflow: hidden;
+}
+
+
+.navlinks li {
+    list-style: none;
+    overflow-x: hidden;
+}
+
+.navlinks a {
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: auto 20px;
+}
+
+.navlinks a:hover{
+    
+}
+
+.burger {
+    display: none;
+    overflow-x: hidden;
+}
+
+.burger div {
+    width: 20px;
+    height: 2px;
+    background-color: grey;
+    overflow-x: hidden;
+    margin: 5px 0%;
+}
+
+@media (max-width: 680px){
+    nav {
+        overflow: hidden;
+    }
+    body {
+       overflow-x: hidden;
+    }
+
+    .navlinks {
+        position: absolute;
+        right: 0px;
+        height: 50%;
+        top: 7.4vh;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        transform: translateX(0%);
+        transition: transform 0.5s ease-in;
+        overflow-x: hidden;
+        z-index: 1;
+        margin: 0 auto;
+    }
+
+    .navlinks li {
+        opacity: 0;
+        background-color: white;
+    }
+
+    .burger{
+        display: block;
+        overflow-x: hidden;
+        float: right;
+        margin: 18px 60px 0px 20px;
+        height: auto;
+    }
+
+
+}
+
+.nav-active {
+    transform: translateX(0%);
+    overflow: hidden;
+    background-color: white;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+.toggle .line1, .toggle .line2 , .toggle .line3  {
+    background-color: $secondary;
+}
+
+.toggle {
+    overflow: hidden;
+}
+

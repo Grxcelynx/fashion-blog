@@ -1,3 +1,120 @@
+.banner {
+  z-index: -1;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.banner .banner-container {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  height: auto;
+  width: 100%;
+}
+
+.banner .banner-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 600px;
+  width: 100%;
+}
+
+.blue {
+  height: 350px;
+  width: 100%;
+  background-color: aliceblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.triangle {
+  z-index: 999;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin: 0px auto;
+  background-color: rgba(240, 248, 255, 0.108);
+  rotate: 45deg;
+  -webkit-box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.rabbithole {
+  height: auto;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 16, 16, 0.3)), to(rgba(15, 16, 16, 0.3))), url(/imgs/vera-gorbunova-RYIgYuwFTrA-unsplash.jpg);
+  background-image: linear-gradient(rgba(15, 16, 16, 0.3), rgba(15, 16, 16, 0.3)), url(/imgs/vera-gorbunova-RYIgYuwFTrA-unsplash.jpg);
+  background-repeat: none;
+  background-position: center;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 1px 1px black;
+}
+
+.rabbithole h2 {
+  font-size: 4rem;
+  margin: 800px auto 200px auto;
+}
+
+.rabbithole p {
+  font-size: 1rem;
+  padding: 0px 200px;
+  margin: 100px auto 600px auto;
+}
+
+.falling {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0em;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.falling .fall {
+  height: auto;
+}
+
+.falling .one, .falling .three {
+  width: 33.3%;
+  padding: 40px 50px 0px 50px;
+}
+
+.falling .two {
+  width: 33.3%;
+}
+
+.falling .two img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 550px;
+  width: 100%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +131,7 @@ nav {
           align-items: center;
   background-color: white;
   overflow-x: hidden;
-  height: 60px;
+  height: 45px;
 }
 
 .logo {
@@ -24,13 +141,12 @@ nav {
   font-weight: 300;
   width: 100px;
   float: left;
-  margin: 10px auto 10px 60px;
+  margin: 15px auto 10px 60px;
   text-decoration: none;
 }
 
 .logo a {
   text-decoration: none;
-  color: #381f38;
 }
 
 .navlinks {
@@ -151,10 +267,6 @@ nav {
     -webkit-transform: translateX(0px);
             transform: translateX(0px);
   }
-}
-
-.toggle .line1, .toggle .line2, .toggle .line3 {
-  background-color: #660764;
 }
 
 .toggle {

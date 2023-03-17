@@ -1,3 +1,100 @@
 //  ALL CODE AND DESIGN BY GRACE BIRNAM <a href="https://grxcelyn.com/">Grxcelyn.com</a> 
 
-  
+.banner{
+    z-index: -1;
+    height: auto;
+    display: flex;
+    object-fit: contain;
+    .banner-container{
+        object-fit: contain;
+        object-position: center;
+        height: auto;
+        width: 100%;
+        img{
+            object-fit: cover;
+            height: 600px;
+            width: 100%;
+        }
+
+
+    }
+}
+
+.blue{
+    height: 350px;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.triangle{
+    z-index: 999;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    margin: 0px auto;
+    background-color: rgba(240, 248, 255, 0.108);
+    // background: radial-gradient( rgba(3, 73, 52, 0.5), rgb(1, 57, 40, 1), rgb(1, 57, 40, 1));
+    // background: radial-gradient(rgb(155, 159, 158), aliceblue);
+    // background: linear-gradient( 135deg, rgb(1, 57, 40),rgb(1, 57, 40), rgb(1, 57, 40, 0.8),rgb(1, 57, 40), rgb(1, 57, 40));
+    rotate: 45deg;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; 
+}
+.rabbithole{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    background-image: linear-gradient(rgba(15, 16, 16, 0.3), rgba(15, 16, 16, 0.3)),url(/imgs/vera-gorbunova-RYIgYuwFTrA-unsplash.jpg);
+    background-repeat: none;
+    background-position: center;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px black;
+
+    h2{
+        font-size: 4rem;
+        margin: 800px auto 200px auto;
+    }
+    p{
+        font-size: 1rem;
+        padding: 0px 200px;
+        margin: 100px auto 600px auto;
+    }
+    // img{
+    //     object-fit: contain;
+    //     width: 100%;
+    // }
+}
+
+.falling{
+    display: flex;
+    flex-direction: row;
+    gap: 0em;
+    text-align: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
+    .fall{
+        // height: 550px;
+        height: auto;
+        // width: 200px;
+    }
+
+    .one, .three{
+        width: 33.3%;
+        padding:40px 50px 0px 50px;
+        // margin-top: 200px;
+    }
+
+    .two{
+        width: 33.3%;
+        // object-fit: contain;
+        img{
+            object-fit: cover;
+            height: 550px;
+            width: 100%;
+        }
+    }
+}
